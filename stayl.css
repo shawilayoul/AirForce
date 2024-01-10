@@ -1,0 +1,194 @@
+body {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    height: 100hv;
+    background-color: beige;
+}
+
+nav {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 8px;
+    border-radius: 10px;
+    width: 350px;
+    background-color: gainsboro;
+}
+
+#search {
+    width: 300px;
+    border: none;
+    padding: 5px 10px;
+    background-color: gainsboro;
+}
+
+.navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navItem {
+    cursor: pointer;
+}
+
+.navBotton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    font-size: larger;
+}
+
+
+.sliders {
+    display: flex;
+    width: 500vw;
+    transition: all 1.5s ease-in-out;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+}
+
+.sliderTitle {
+    font-weight: 900;
+    font-size: 25px;
+    position: absolute;
+    z-index: 1;
+    right: 30%;
+    color: white;
+}
+
+.sliderimg {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+}
+
+.sliderCircle {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+}
+
+.sliderPrice {
+    position: absolute;
+    font-size: 30px;
+    left: 25%;
+    font-weight: 900;
+}
+
+.sliderbtn {
+    position: absolute;
+    right: 30%;
+    top: 70%;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.sliderbtn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.slider:nth-child(1) .sliderCircle {
+    background-color: rgb(186, 186, 19);
+}
+
+.slider:nth-child(2) .sliderCircle {
+    background-color: rgba(0, 128, 0, 0.306);
+}
+
+.slider:nth-child(3) .sliderCircle {
+    background-color: blanchedalmond;
+}
+
+.slider:nth-child(4) .sliderCircle {
+    background-color: aqua;
+}
+
+.slider:nth-child(5) .sliderCircle {
+    background-color: rgba(0, 0, 255, 0.438);
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 0 10px;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ftitle {
+    font-weight: 800;
+}
+
+.display {
+    display: flex;
+    background-color: wheat;
+    padding: 10px 0;
+}
+
+.disimg {
+    width: 70%;
+}
+
+.dirighttitle {
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.disright {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.discolor {
+    display: flex;
+    gap: 10px;
+}
+
+.discolor1 {
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+}
+
+.discolor2 {
+    width: 40px;
+    height: 40px;
+    background-color: aquamarine;
+}
