@@ -142,7 +142,9 @@ select {
     overflow: hidden;
     margin-top: 3rem;
 }
-
+.mobile{
+    display: none;
+}
 .slider {
     display: flex;
     flex-direction: column;
@@ -406,11 +408,18 @@ select {
     .navtitlel h2 {
         font-size: 20px;
     }
-
+    
+    .navBotton{
+        display: none;
+    } 
+   
     .navBotton span {
         font-size: 16px;
     }
-
+    .navtitlel a {
+        text-decoration: none;
+        color: white;
+    }
     .search {
         display: flex;
         justify-content: space-between;
@@ -436,7 +445,7 @@ select {
         font-size: 15px;
     }
 
-    .left {
+    .container-home .left {
         display: none;
     }
 
@@ -447,9 +456,26 @@ select {
         width: 60px;
     }
 
+    .slider{
+        display: none;
+    }
+    .left-slider{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: aqua;
+        border-radius: 50%;
+    }
     .sliderbtn {
         right: 40%;
-        top: 80%;
+        top: 72%;
         padding: 8px 10px;
         border-radius: 5px;
     }
@@ -458,10 +484,10 @@ select {
         width: 300px;
         height: 300px;
         position: absolute;
-        top: 0;
+        top: 10rem;
     }
 
-    .sliderCircle {
+    .mobile .sliderCircle {
         width: 350px;
         height: 350px;
         border-radius: 50%;
@@ -471,7 +497,7 @@ select {
         position: absolute;
         font-size: 18px;
         left: 40%;
-        top: 18rem;
+        top: 28rem;
         color: white;
     }
 
@@ -483,7 +509,7 @@ select {
         z-index: 1;
         font-weight: 800;
         left: 40%;
-        top: 10rem;
+        top: 20rem;
     }
 
     .features {
