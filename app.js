@@ -18,3 +18,12 @@ shoeZise.forEach((shoe, index) => {
     });
   });
 });
+const close = document.querySelector(".close");
+const payment = document.querySelector(".payment-model");
+const paymentbtn = document.querySelector(".paymentbtn");
+paymentbtn.addEventListener('click',()=>{
+  payment.style.display = "block";
+})
+close.addEventListener('click',()=>{
+  payment.style.display = "none";
+})
