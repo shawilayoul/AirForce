@@ -13,365 +13,458 @@
 
 <body>
     <div class="container">
-        <nav>
-            <div class="navTop">
-                <div class="navtitlel">
-                    <h2>Nike Air</h2>
+        <div class="nav">
+            <nav>
+                <div class="navTop">
+                    <div class="navtitlel">
+                        <a href="index.html">
+                            <h2>Nike Air</h2>
+                        </a>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="what are you looking for ?" id="search">
+                        <span class="material-icons">
+                            search
+                        </span>
+                    </div>
+                    <div class="navtitler panier">
+                        <div class="panierItem">
+                            <p>2</p>
+                        </div>
+                        <a href="cart.html">
+                            <img src="./assests/shopping-cart.png" alt="cart">
+                        </a>
+                    </div>
                 </div>
-                <div class="search">
-                    <input type="text" placeholder="what are you looking for ?" id="search">
-                    <span class="material-icons">
-                        search
+                <div class="navBotton">
+                    <span class="navItem">
+                        AIR JORDAN
+                    </span>
+                    <span class="navItem">
+                        AIR FORCE
+                    </span>
+                    <span class="navItem">
+                        AIR MAX
+                    </span>
+                    <span class="navItem">
+                        DUNK
+                    </span>
+                    <span class="navItem">
+                        BLAZER
                     </span>
                 </div>
-                <div class="navtitler panier">
-                    <a href="cart.html">
-                        <img src="./assests/shopping-cart.png" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="navBotton">
-                <span class="navItem">
-                    Nike Air Max Dn
-                </span>
-                <span class="navItem">
-                    Nike Dunk Low
-                </span>
-                <span class="navItem">
-                    Nike Go FlyEase
-                </span>
-                <span class="navItem">
-                    Nike Air Force
-                </span>
-                <span class="navItem">
-                    Nike Air Max Plus
-                </span>
-            </div>
-        </nav>
-        <!--**** slider ** -->
-        <div class="sliders">
-            <div class="slider">
-                <img src="./assests/blazer2.png" alt="" class="sliderimg">
-                <div class="sliderTitle">
-                    <h2>Sneakers JORDAN <br> NEW <br> SEASON</h2>
-                </div>
-                <div class="sliderCircle"></div>
-                <span class="sliderPrice">
-                    PRICE 19 $
-                </span>
-                <a href="#display"><button class="sliderbtn">ADD TO CART</button></a>
-            </div>
-            <div class="slider">
-                <img src="./assests/blazer.png" alt="" class="sliderimg">
-                <div class="sliderTitle">
-                    <h2>Sneakers JORDAN <br> NEW <br> SEASON</h2>
-                </div>
-                <div class="sliderCircle">
-                </div>
-                <span class="sliderPrice">
-                    PRICE 50 $
-                </span>
-                <a href="#display"><button class="sliderbtn">BUY NOW</button></a>
-
-            </div>
-            <div class="slider">
-                <img src="./assests/air.png" alt="" class="sliderimg">
-                <div class="sliderTitle">
-
-                    <h2>AIR JORDAN <br> NEW <br> SEASON</h2>
-                </div>
-                <div class="sliderCircle">
-                </div>
-
-                <span class="sliderPrice">
-                    PRICE 110 $
-                </span>
-                <a href="#display"><button class="sliderbtn">BUY NOW</button></a>
-
-            </div>
-            <div class="slider">
-                <img src="./assests/nikebr4.png" alt="" class="sliderimg">
-                <div class="sliderTitle">
-                    <h2>AIR JORDAN <br> NEW <br> SEASON</h2>
-                </div>
-                <div class="sliderCircle">
-                </div>
-
-                <span class="sliderPrice">
-                    PRICE 200 $
-                </span>
-                <a href="#display"><button class="sliderbtn">BUY NOW</button></a>
-
-            </div>
-            <div class="slider">
-                <img src="./assests/air1.png" alt="" class="sliderimg">
-                <div class="sliderTitle">
-
-                    <h2>AIR JORDAN <br> NEW <br> SEASON</h2>
-
-                </div>
-                <div class="sliderCircle">
-                </div>
-
-                <span class="sliderPrice">
-                    PRICE 150 $
-                </span>
-                <a href="#display"><button class="sliderbtn">BUY NOW</button></a>
-            </div>
+            </nav>
         </div>
-        <!--*** Latest Drops***-->
-        <div class="latest-drop-container">
-            <div class="latest-title">
-                <h2>LATEST DROPS</h2>
+        <div class="container-home">
+            <div class="left">
+                <left-top>
+                    <h2>Filter by category</h2>
+                </left-top>
+                <div class="left-bottum">
+                    <div class="select-cat">
+                        <label for="selected1">promotions and offers</label>
+                        <select id="selected1">
+                            <option value="#">-20% on Air max</option>
+                            <option value="#">Promotions</option>
+                        </select>
+                    </div>
+                    <div class="select-cat">
+                        <label for="selected2">Sex</label>
+                        <select id="selected2">
+                            <option value="#">Men</option>
+                            <option value="#">Women</option>
+                            <option value="#">Mixt</option>
+                        </select>
+                    </div>
+                    <div class="select-cat">
+                        <label for="selected3">Child</label>
+                        <select id="selected3">
+                            <option value="#">Girls</option>
+                            <option value="#">Boys</option>
+                        </select>
+                    </div>
+                    <div class="select-cat">
+                        <label for="selected4">Search by price</label>
+                        <select id="selected4">
+                            <option value="#">Less 50 $</option>
+                            <option value="#">50 $ - 100 $</option>
+                            <option value="#">100 $ - 150 $</option>
+                            <option value="#">Plus de 150 $</option>
+                        </select>
+                    </div>
+                    <div class="select-cat">
+                        <label for="selected5">Color</label>
+                        <select id="selected5">
+                            <option value="#">Black</option>
+                            <option value="#">Blue</option>
+                            <option value="#">Brown</option>
+                            <option value="#">Green</option>
+                            <option value="#">Orange</option>
+                            <option value="#">Red</option>
+
+                        </select>
+                    </div>
+                    <div class="select-cat">
+                        <label for="selected6">Sport</label>
+                        <select id="selected6">
+                            <option value="#">Running</option>
+                            <option value="#">Football</option>
+                            <option value="#">Golf</option>
+                            <option value="#">Tennis</option>
+                            <option value="#">Volley_ball</option>
+                            <option value="#">Hockey</option>
+                            <option value="#">Danse</option>
+                        </select>
+                    </div>
+                    <div class="select-cat">
+                        <label for="selected7">Collections</label>
+                        <select id="selected7">
+                            <option value="#">Pegasus</option>
+                            <option value="#">Nike Invincibel</option>
+                            <option value="#">Nike infinity Run</option>
+                            <option value="#">Nike Vaporfly</option>
+                            <option value="#">Alhpafly</option>
+                        </select>
+                    </div>
+                    <div class="select-cat">
+                        <label for="selected8">Size</label>
+                        <select id="selected8">
+                            <option value="#">Classique</option>
+                            <option value="#">Large</option>
+                            <option value="#">Extra-large</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-            <div class="latest-drop">
-                <div class="items">
-                    <div class="item-img">
-                        <img src="./assests/air.png" alt="">
+            <!--**** slider ** -->
+            <div class="left-slider">
+                <div class="sliders">
+                    <div class="slider">
+                        <img src="./assests/blazer2.png" alt="" class="sliderimg">
+                        <div class="sliderTitle">
+                            <h2>AIR JORDAN 1<br> NEW <br> SEASON</h2>
+                        </div>
+                        <div class="sliderCircle"></div>
+                        <span class="sliderPrice">
+                            PRICE 19 $
+                        </span>
+                        <a href="#display"><button class="sliderbtn">ADD TO CART</button></a>
                     </div>
-                    <div class="item-desc">
-                        <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
-                        </p>
+                    <div class="slider">
+                        <img src="./assests/blazer.png" alt="" class="sliderimg">
+                        <div class="sliderTitle">
+                            <h2>AIR FORCE 1 <br> NEW <br> SEASON</h2>
+                        </div>
+                        <div class="sliderCircle">
+                        </div>
+                        <span class="sliderPrice">
+                            PRICE 50 $
+                        </span>
+                        <a href="#display"><button class="sliderbtn">BUY NOW</button></a>
+
                     </div>
-                    <div class="item-price">
-                        <p> From $142 USD</p>
+                    <div class="slider">
+                        <img src="./assests/air.png" alt="" class="sliderimg">
+                        <div class="sliderTitle">
+
+                            <h2>AIR MAX <br> NEW <br> SEASON</h2>
+                        </div>
+                        <div class="sliderCircle">
+                        </div>
+
+                        <span class="sliderPrice">
+                            PRICE 110 $
+                        </span>
+                        <a href="#display"><button class="sliderbtn">BUY NOW</button></a>
+
                     </div>
-                    <button class="latest-btn">ADD To CART</button>
-                </div>
-                <div class="items">
-                    <div class="item-img">
-                        <img src="./assests/blazer.png" alt="">
+                    <div class="slider">
+                        <img src="./assests/nikebr4.png" alt="" class="sliderimg">
+                        <div class="sliderTitle">
+                            <h2>DUNK<br> NEW <br> SEASON</h2>
+                        </div>
+                        <div class="sliderCircle">
+                        </div>
+
+                        <span class="sliderPrice">
+                            PRICE 200 $
+                        </span>
+                        <a href="#display"><button class="sliderbtn">BUY NOW</button></a>
+
                     </div>
-                    <div class="item-desc">
-                        <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
-                        </p>
+                    <div class="slider">
+                        <img src="./assests/air1.png" alt="" class="sliderimg">
+                        <div class="sliderTitle">
+
+                            <h2>BLAZER <br> NEW <br> SEASON</h2>
+
+                        </div>
+                        <div class="sliderCircle">
+                        </div>
+
+                        <span class="sliderPrice">
+                            PRICE 150 $
+                        </span>
+                        <a href="#display"><button class="sliderbtn">BUY NOW</button></a>
                     </div>
-                    <div class="item-price">
-                        <p> From $142 USD</p>
-                    </div>
-                    <button class="latest-btn">ADD To CART</button>
-                </div>
-                <div class="items">
-                    <div class="item-img">
-                        <img src="./assests/blazer2.png" alt="">
-                    </div>
-                    <div class="item-desc">
-                        <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
-                        </p>
-                    </div>
-                    <div class="item-price">
-                        <p> From $20 USD</p>
-                    </div>
-                    <button class="latest-btn">ADD To CART</button>
-                </div>
-                <div class="items">
-                    <div class="item-img">
-                        <img src="./assests/air1.png" alt="">
-                    </div>
-                    <div class="item-desc">
-                        <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
-                        </p>
-                    </div>
-                    <div class="item-price">
-                        <p> From $200 USD</p>
-                    </div>
-                    <button class="latest-btn">ADD To CART</button>
-                </div>
-                <div class="items">
-                    <div class="item-img">
-                        <img src="./assests/air2.png" alt="">
-                    </div>
-                    <div class="item-desc">
-                        <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
-                        </p>
-                    </div>
-                    <div class="item-price">
-                        <p> From $120 USD</p>
-                    </div>
-                    <button class="latest-btn">ADD To CART</button>
-                </div>
-                <div class="items">
-                    <div class="item-img">
-                        <img src="./assests/air1.png" alt="">
-                    </div>
-                    <div class="item-desc">
-                        <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
-                        </p>
-                    </div>
-                    <div class="item-price">
-                        <p> From $142 USD</p>
-                    </div>
-                    <button class="latest-btn">ADD To CART</button>
-                </div>
-                <div class="items">
-                    <div class="item-img">
-                        <img src="./assests/blazer2.png" alt="">
-                    </div>
-                    <div class="item-desc">
-                        <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
-                        </p>
-                    </div>
-                    <div class="item-price">
-                        <p> From $142 USD</p>
-                    </div>
-                    <button class="latest-btn">ADD To CART</button>
-                </div>
-                <div class="items">
-                    <div class="item-img">
-                        <img src="./assests/air.png" alt="">
-                    </div>
-                    <div class="item-desc">
-                        <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
-                        </p>
-                    </div>
-                    <div class="item-price">
-                        <p> From $142 USD</p>
-                    </div>
-                    <button class="latest-btn">ADD To CART</button>
-                </div>
-                <div class="items">
-                    <div class="item-img">
-                        <img src="./assests/blazer.png" alt="">
-                    </div>
-                    <div class="item-desc">
-                        <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
-                        </p>
-                    </div>
-                    <div class="item-price">
-                        <p> From $142 USD</p>
-                    </div>
-                    <button class="latest-btn">ADD To CART</button>
-                </div>
-                <div class="items">
-                    <div class="item-img">
-                        <img src="./assests/blazer2.png" alt="">
-                    </div>
-                    <div class="item-desc">
-                        <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
-                        </p>
-                    </div>
-                    <div class="item-price">
-                        <p> From $142 USD</p>
-                    </div>
-                    <button class="latest-btn">ADD To CART</button>
-                </div>
-                <div class="items">
-                    <div class="item-img">
-                        <img src="./assests/blazer2.png" alt="">
-                    </div>
-                    <div class="item-desc">
-                        <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
-                        </p>
-                    </div>
-                    <div class="item-price">
-                        <p> From $20 USD</p>
-                    </div>
-                    <button class="latest-btn">ADD To CART</button>
-                </div>
-                <div class="items">
-                    <div class="item-img">
-                        <img src="./assests/air1.png" alt="">
-                    </div>
-                    <div class="item-desc">
-                        <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
-                        </p>
-                    </div>
-                    <div class="item-price">
-                        <p> From $200 USD</p>
-                    </div>
-                    <button class="latest-btn">ADD To CART</button>
-                </div>
-                <div class="items">
-                    <div class="item-img">
-                        <img src="./assests/air2.png" alt="">
-                    </div>
-                    <div class="item-desc">
-                        <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
-                        </p>
-                    </div>
-                    <div class="item-price">
-                        <p> From $120 USD</p>
-                    </div>
-                    <button class="latest-btn">ADD To CART</button>
-                </div>
-                <div class="items">
-                    <div class="item-img">
-                        <img src="./assests/air1.png" alt="">
-                    </div>
-                    <div class="item-desc">
-                        <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
-                        </p>
-                    </div>
-                    <div class="item-price">
-                        <p> From $142 USD</p>
-                    </div>
-                    <button class="latest-btn">ADD To CART</button>
-                </div>
-                <div class="items">
-                    <div class="item-img">
-                        <img src="./assests/blazer2.png" alt="">
-                    </div>
-                    <div class="item-desc">
-                        <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
-                        </p>
-                    </div>
-                    <div class="item-price">
-                        <p> From $142 USD</p>
-                    </div>
-                    <button class="latest-btn">ADD To CART</button>
-                </div>
-                <div class="items">
-                    <div class="item-img">
-                        <img src="./assests/blazer2.png" alt="">
-                    </div>
-                    <div class="item-desc">
-                        <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
-                        </p>
-                    </div>
-                    <div class="item-price">
-                        <p> From $20 USD</p>
-                    </div>
-                    <button class="latest-btn">ADD To CART</button>
                 </div>
             </div>
         </div>
-        <!--*** features***-->
-        <div class="features">
-            <div class="feature">
-                <span class="material-icons">
-                    local_shipping
-                </span>
-                <span class="ftitle">FREE SHIPPING</span>
-                <span class="fdesc">
-                    Free world wide <br> shipping on all <br>others
-                </span>
+        <div class="right">
+            <!--*** Latest Drops***-->
+            <div class="latest-drop-container">
+                <div class="latest-title">
+                    <h2>LATEST DROPS</h2>
+                </div>
+                <div class="latest-drop">
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="./assests/air.png" alt="">
+                        </div>
+                        <div class="item-desc">
+                            <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
+                            </p>
+                        </div>
+                        <div class="item-price">
+                            <p> From $142 USD</p>
+                        </div>
+                        <button class="latest-btn">ADD To CART</button>
+                    </div>
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="./assests/blazer.png" alt="">
+                        </div>
+                        <div class="item-desc">
+                            <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
+                            </p>
+                        </div>
+                        <div class="item-price">
+                            <p> From $142 USD</p>
+                        </div>
+                        <button class="latest-btn">ADD To CART</button>
+                    </div>
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="./assests/blazer2.png" alt="">
+                        </div>
+                        <div class="item-desc">
+                            <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
+                            </p>
+                        </div>
+                        <div class="item-price">
+                            <p> From $20 USD</p>
+                        </div>
+                        <button class="latest-btn">ADD To CART</button>
+                    </div>
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="./assests/air1.png" alt="">
+                        </div>
+                        <div class="item-desc">
+                            <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
+                            </p>
+                        </div>
+                        <div class="item-price">
+                            <p> From $200 USD</p>
+                        </div>
+                        <button class="latest-btn">ADD To CART</button>
+                    </div>
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="./assests/air2.png" alt="">
+                        </div>
+                        <div class="item-desc">
+                            <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
+                            </p>
+                        </div>
+                        <div class="item-price">
+                            <p> From $120 USD</p>
+                        </div>
+                        <button class="latest-btn">ADD To CART</button>
+                    </div>
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="./assests/air1.png" alt="">
+                        </div>
+                        <div class="item-desc">
+                            <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
+                            </p>
+                        </div>
+                        <div class="item-price">
+                            <p> From $142 USD</p>
+                        </div>
+                        <button class="latest-btn">ADD To CART</button>
+                    </div>
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="./assests/blazer2.png" alt="">
+                        </div>
+                        <div class="item-desc">
+                            <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
+                            </p>
+                        </div>
+                        <div class="item-price">
+                            <p> From $142 USD</p>
+                        </div>
+                        <button class="latest-btn">ADD To CART</button>
+                    </div>
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="./assests/air.png" alt="">
+                        </div>
+                        <div class="item-desc">
+                            <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
+                            </p>
+                        </div>
+                        <div class="item-price">
+                            <p> From $142 USD</p>
+                        </div>
+                        <button class="latest-btn">ADD To CART</button>
+                    </div>
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="./assests/blazer.png" alt="">
+                        </div>
+                        <div class="item-desc">
+                            <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
+                            </p>
+                        </div>
+                        <div class="item-price">
+                            <p> From $142 USD</p>
+                        </div>
+                        <button class="latest-btn">ADD To CART</button>
+                    </div>
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="./assests/blazer2.png" alt="">
+                        </div>
+                        <div class="item-desc">
+                            <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
+                            </p>
+                        </div>
+                        <div class="item-price">
+                            <p> From $142 USD</p>
+                        </div>
+                        <button class="latest-btn">ADD To CART</button>
+                    </div>
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="./assests/blazer2.png" alt="">
+                        </div>
+                        <div class="item-desc">
+                            <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
+                            </p>
+                        </div>
+                        <div class="item-price">
+                            <p> From $20 USD</p>
+                        </div>
+                        <button class="latest-btn">ADD To CART</button>
+                    </div>
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="./assests/air1.png" alt="">
+                        </div>
+                        <div class="item-desc">
+                            <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
+                            </p>
+                        </div>
+                        <div class="item-price">
+                            <p> From $200 USD</p>
+                        </div>
+                        <button class="latest-btn">ADD To CART</button>
+                    </div>
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="./assests/air2.png" alt="">
+                        </div>
+                        <div class="item-desc">
+                            <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
+                            </p>
+                        </div>
+                        <div class="item-price">
+                            <p> From $120 USD</p>
+                        </div>
+                        <button class="latest-btn">ADD To CART</button>
+                    </div>
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="./assests/air1.png" alt="">
+                        </div>
+                        <div class="item-desc">
+                            <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
+                            </p>
+                        </div>
+                        <div class="item-price">
+                            <p> From $142 USD</p>
+                        </div>
+                        <button class="latest-btn">ADD To CART</button>
+                    </div>
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="./assests/blazer2.png" alt="">
+                        </div>
+                        <div class="item-desc">
+                            <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
+                            </p>
+                        </div>
+                        <div class="item-price">
+                            <p> From $142 USD</p>
+                        </div>
+                        <button class="latest-btn">ADD To CART</button>
+                    </div>
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="./assests/blazer2.png" alt="">
+                        </div>
+                        <div class="item-desc">
+                            <p>Lorem ipsum dolor sit amet <br>Porro quae assumenda enim
+                            </p>
+                        </div>
+                        <div class="item-price">
+                            <p> From $20 USD</p>
+                        </div>
+                        <button class="latest-btn">ADD To CART</button>
+                    </div>
+                </div>
             </div>
-            <div class="feature">
-                <span class="material-icons">
-                    all_inbox
-                </span>
-                <span class="ftitle">30 DAYS RETURN</span>
-                <span class="fdesc">
-                    No question return <br>and easy return in<br>14 days
-                </span>
-            </div>
-            <div class="feature">
-                <span class="material-icons">
-                    card_giftcard
-                </span>
-                <span class="ftitle">GIFT CARDS</span>
-                <span class="fdesc">
-                    Buy gift cards and <br> use coupon cards <br>easily
-                </span>
-            </div>
-            <div class="feature">
-                <span class="material-icons">
-                    phone_paused
-                </span>
-                <span class="ftitle">CONTACTS US!</span>
-                <span class="fdesc">
-                    Keep in touch via <br> email and supports<br>system
-                </span>
+            <!--*** features***-->
+            <div class="features">
+                <div class="feature">
+                    <span class="material-icons">
+                        local_shipping
+                    </span>
+                    <span class="ftitle">FREE SHIPPING</span>
+                    <span class="fdesc">
+                        Free world wide <br> shipping on all <br>others
+                    </span>
+                </div>
+                <div class="feature">
+                    <span class="material-icons">
+                        all_inbox
+                    </span>
+                    <span class="ftitle">30 DAYS RETURN</span>
+                    <span class="fdesc">
+                        No question return <br>and easy return in<br>14 days
+                    </span>
+                </div>
+                <div class="feature">
+                    <span class="material-icons">
+                        card_giftcard
+                    </span>
+                    <span class="ftitle">GIFT CARDS</span>
+                    <span class="fdesc">
+                        Buy gift cards and <br> use coupon cards <br>easily
+                    </span>
+                </div>
+                <div class="feature">
+                    <span class="material-icons">
+                        phone_paused
+                    </span>
+                    <span class="ftitle">CONTACTS US!</span>
+                    <span class="fdesc">
+                        Keep in touch via <br> email and supports<br>system
+                    </span>
+                </div>
             </div>
         </div>
 

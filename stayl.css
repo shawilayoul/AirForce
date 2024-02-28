@@ -9,10 +9,13 @@ body {
 }
 
 .container {
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
     height: 100hv;
     background-color: beige;
+    display: flex;
+    flex-direction: column;
+    gap: 9rem;
 }
 
 nav {
@@ -20,6 +23,14 @@ nav {
     background-color: black;
     color: white;
     margin-bottom: 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.navtitlel a {
+    text-decoration: none;
+    color: white;
 }
 
 .search {
@@ -51,22 +62,27 @@ nav {
 }
 
 .panier {
+    position: relative;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row-reverse;
-    gap: 5px;
     color: black;
     background-color: lightgray;
     border-radius: 8px;
     height: 50px;
     width: 80px;
+    margin-right: 2rem;
 }
 
 .panier img {
     width: 30px;
     height: 30px;
+}
+
+.panierItem {
+    color: red;
+    position: absolute;
 }
 
 .navBotton {
@@ -77,12 +93,54 @@ nav {
     font-size: larger;
 }
 
+.container-home {
+    display: flex;
+    width: 100%;
+}
+
+.left {
+    width: 20%;
+    background-color: lightgrey;
+    padding: 10px 20px;
+    height: 100%;
+    z-index: 1;
+}
+
+.left-bottum {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.select-cat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.select-cat label,
+option,
+select {
+    margin-bottom: 10px;
+}
+
+.select-cat select {
+    border: none;
+    padding: 5px 10px;
+}
+
+.left-slider{
+    width: 80%; 
+}
 
 .sliders {
     display: flex;
-    width: 500vw;
+    width: 600vw;
     transition: all 1.5s ease-in-out;
+    align-items: center;
     overflow: hidden;
+    margin-top: 3rem;
 }
 
 .slider {
@@ -95,23 +153,24 @@ nav {
 }
 
 .sliderTitle {
-    font-weight: 900;
-    font-size: 25px;
+    font-weight: 800;
+    font-size: 20px;
     position: absolute;
     z-index: 1;
-    right: 15%;
+    left: 20%;
+    top: 4rem;
 }
 
 .sliderimg {
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     position: absolute;
     top: 0;
 }
 
 .sliderCircle {
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
 }
 
@@ -185,6 +244,7 @@ nav {
     gap: 10px;
     width: 200px;
     padding: 10px;
+    background-color: white;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
@@ -194,7 +254,7 @@ nav {
 
 .display {
     display: flex;
-    background-color: wheat;
+    background-color: beige;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -242,6 +302,15 @@ nav {
     cursor: pointer;
 }
 
+.latest-drop-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
 .latest-drop {
     display: flex;
     align-items: center;
@@ -281,15 +350,17 @@ nav {
 }
 
 .payment-model {
-    width: 50%;
+    width: 40%;
     background-color: white;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
     padding: 3px 20px;
     position: absolute;
-    left: 20%;
+    left: 25%;
     z-index: 1;
+    height: 73%;
+    top: 10%;
     display: none;
-    bottom: 2%;
+    border-radius: 8px;
 }
 
 .payment-form {
@@ -324,7 +395,7 @@ nav {
     padding: 10px 10px;
     border-radius: 8px;
     color: white;
-    background-color: lightgreen;
+    background-color: green;
     border: 0;
     cursor: pointer;
 
@@ -357,11 +428,22 @@ nav {
         padding: 5px 8px;
         background-color: gainsboro;
     }
+    .navBotton {
+        gap: 20px;
+       
+    }
+    .navBotton span{
+        font-size: 15px;
+    }
+
+    .left {
+        display: none;
+    }
 
     .panier {
-        gap: 2px;
+        gap: 5px;
         border-radius: 5px;
-        height: 40px;
+        height: 35px;
         width: 60px;
     }
 
@@ -380,24 +462,28 @@ nav {
     }
 
     .sliderCircle {
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
         border-radius: 50%;
     }
 
     .sliderPrice {
         position: absolute;
         font-size: 18px;
-        left: 20%;
-        font-weight: 900;
+        left: 40%;
+        top: 18rem;
+        color: white;
     }
 
     .sliderTitle {
         font-weight: 600;
         font-size: 16px;
+        color: white;
         position: absolute;
         z-index: 1;
-        right: 0%;
+        font-weight: 800;
+        left: 40%;
+        top: 10rem;
     }
 
     .features {
