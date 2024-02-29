@@ -12,7 +12,7 @@ body {
     width: 100vw;
     margin: 0 auto;
     height: 100hv;
-    background-color: beige;
+     background-color: beige;
     display: flex;
     flex-direction: column;
     gap: 9rem;
@@ -130,8 +130,8 @@ select {
     padding: 5px 10px;
 }
 
-.left-slider{
-    width: 80%; 
+.left-slider {
+    width: 80%;
 }
 
 .sliders {
@@ -142,9 +142,11 @@ select {
     overflow: hidden;
     margin-top: 3rem;
 }
-.mobile{
+
+.mobile {
     display: none;
 }
+
 .slider {
     display: flex;
     flex-direction: column;
@@ -403,29 +405,62 @@ select {
 
 }
 
+/* footer section start */
+.footer-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color:white;
+    background-color: black;
+    width: 100%;
+}
+.social{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.copy-right-sec {
+    padding: 1.8rem;
+    background: #82074a;
+    color: #fff;
+    text-align: center;
+}
+
+.copy-right-sec a {
+    color: #fcd462;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* footer section end */
 /* responsive mobile*/
 @media screen and (max-width: 600px) {
     .navtitlel h2 {
         font-size: 20px;
     }
-    
-    .navBotton{
+
+    .navBotton {
         display: none;
-    } 
-   
+    }
+
     .navBotton span {
         font-size: 16px;
     }
+
     .navtitlel a {
         text-decoration: none;
         color: white;
     }
+
     .search {
         display: flex;
         justify-content: space-between;
         padding: 3px 8px;
         border-radius: 10px;
-        width: 240px;
+        width: 220px;
         background-color: gainsboro;
         cursor: pointer;
         border: none;
@@ -437,11 +472,12 @@ select {
         padding: 5px 8px;
         background-color: gainsboro;
     }
+
     .navBotton {
         gap: 20px;
-       
     }
-    .navBotton span{
+
+    .navBotton span {
         font-size: 15px;
     }
 
@@ -456,23 +492,26 @@ select {
         width: 60px;
     }
 
-    .slider{
+    .slider {
         display: none;
     }
-    .left-slider{
+
+    .left-slider {
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
         width: 100%;
     }
-    .mobile{
+
+    .mobile {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color:lightgreen;
+        background-color: lightgreen;
         border-radius: 50%;
     }
+
     .sliderbtn {
         right: 40%;
         top: 72%;
@@ -525,5 +564,13 @@ select {
     .latest-title {
         margin-left: 9rem;
         font-size: 16px;
+    }
+    .footer-top{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-middle{
+        display: none;
     }
 }
