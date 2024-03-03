@@ -20,7 +20,7 @@ body {
 
 nav {
     padding: 10px 20px;
-    background-color: black;
+    background-color: green;
     color: white;
     margin-bottom: 40px;
     position: fixed;
@@ -70,9 +70,9 @@ nav {
     color: black;
     background-color: lightgray;
     border-radius: 8px;
-    height: 50px;
-    width: 80px;
-    margin-right: 2rem;
+    height: 40px;
+    width: 70px;
+    margin-right: 3rem;
 }
 
 .panier img {
@@ -428,7 +428,7 @@ select {
 
 .copy-right-sec {
     padding: 1.8rem;
-    background: #82074a;
+    background: green;
     color: #fff;
     text-align: center;
 }
@@ -445,6 +445,10 @@ a {
 /* footer section end */
 /* responsive mobile*/
 @media screen and (max-width: 600px) {
+    nav{
+        background-color:green;
+        width: 100%;
+    }
     .navtitlel h2 {
         font-size: 20px;
     }
