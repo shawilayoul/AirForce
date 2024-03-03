@@ -454,14 +454,14 @@ a {
 @media screen and (max-width: 600px) {
     nav {
         background-color: green;
-        width: 100%;
+        width: 100vw;
     }
 
     .navTop {
         display: flex;
         align-items: center;
         gap: 1rem;
-        width: 100%;
+        width: 100vw;
     }
 
     .navtitlel h2 {
@@ -489,7 +489,7 @@ a {
         background-color: white;
         cursor: pointer;
         border: none;
-        width: 40%;
+        width: 52vw
     }
 
     #search {
