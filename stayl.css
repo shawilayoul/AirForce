@@ -39,7 +39,8 @@ nav {
     padding: 3px 8px;
     border-radius: 10px;
     width: 350px;
-    background-color: lightgray;
+    background-color: white;
+    color: gray;
     cursor: pointer;
     border: none;
 }
@@ -48,7 +49,8 @@ nav {
     width: 300px;
     border: none;
     padding: 5px 10px;
-    background-color: lightgray;
+    background-color: white;
+    color: lightgrey;
 }
 
 .navTop {
@@ -68,7 +70,7 @@ nav {
     align-items: center;
     justify-content: center;
     color: black;
-    background-color: lightgray;
+    background-color: white;
     border-radius: 8px;
     height: 40px;
     width: 70px;
@@ -217,7 +219,7 @@ select {
 }
 
 .slider:nth-child(2) .sliderCircle {
-    background-color: lightgreen;
+    background-color: green;
 }
 
 .slider:nth-child(3) .sliderCircle {
@@ -225,7 +227,7 @@ select {
 }
 
 .slider:nth-child(4) .sliderCircle {
-    background-color: lightgreen;
+    background-color: green;
 }
 
 .slider:nth-child(5) .sliderCircle {
@@ -259,6 +261,7 @@ select {
     font-weight: 800;
 }
 
+/* display  item in catr start*/
 .display {
     display: flex;
     background-color: beige;
@@ -309,6 +312,7 @@ select {
     cursor: pointer;
 }
 
+/* latest drop start*/
 .latest-drop-container {
     display: flex;
     flex-direction: column;
@@ -360,6 +364,8 @@ select {
     margin-bottom: -15px;
 }
 
+/* payment model start*/
+
 .payment-model {
     width: 40%;
     background-color: white;
@@ -410,6 +416,7 @@ select {
 
 }
 
+/* payment model end*/
 /* footer section start */
 .footer-top {
     display: flex;
@@ -445,10 +452,17 @@ a {
 /* footer section end */
 /* responsive mobile*/
 @media screen and (max-width: 600px) {
-    nav{
-        background-color:green;
+    nav {
+        background-color: green;
         width: 100%;
     }
+
+    .navTop {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
     .navtitlel h2 {
         font-size: 20px;
     }
@@ -471,17 +485,16 @@ a {
         justify-content: space-between;
         padding: 3px 8px;
         border-radius: 10px;
-        width: 220px;
-        background-color: gainsboro;
+        background-color: white;
         cursor: pointer;
         border: none;
     }
 
     #search {
-        width: 150px;
         border: none;
         padding: 5px 8px;
-        background-color: gainsboro;
+        background-color: white;
+        color: green;
     }
 
     .navBotton {
@@ -497,12 +510,14 @@ a {
     }
 
     .panier {
-        gap: 2px;
         border-radius: 5px;
-        height: 35px;
-        width: 55px;
+        padding: 0 5px;
     }
 
+    .panier img {
+        width: 25px;
+        height: 25px;
+    }
 
     .sliders {
         display: flex;
@@ -541,8 +556,8 @@ a {
     }
 
     .sliderCircle {
-        width: 400px;
-        height: 400px;
+        width: 380px;
+        height: 380px;
     }
 
     .sliderimg {
