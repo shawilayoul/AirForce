@@ -24,7 +24,7 @@ nav {
     color: white;
     margin-bottom: 40px;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 2;
 }
 
@@ -133,7 +133,7 @@ select {
 }
 
 .left-slider {
-    width: 80%;
+    width: 100%;
 }
 
 .sliders {
@@ -499,8 +499,19 @@ a {
         width: 55px;
     }
 
+
+    .sliders {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 500vw;
+    }
+
     .slider {
-        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 500vw;
     }
 
     .left-slider {
@@ -508,7 +519,6 @@ a {
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
     }
 
     .mobile {
@@ -517,12 +527,6 @@ a {
         justify-content: center;
         background-color: lightgreen;
         border-radius: 50%;
-    }
-
-    .sliders {
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .sliderbtn {
