@@ -101,11 +101,13 @@ nav {
     width: 100%;
 }
 
+/* hom left start side*/
 .left {
     width: 20%;
     padding: 10px 20px;
     border: 1px solid lightgray;
     border-radius: 8px;
+    background-color: white;
     height: 100%;
     z-index: 1;
 }
@@ -134,6 +136,8 @@ select {
     padding: 5px 10px;
 }
 
+/* hom left side end*/
+/* hom left sider start*/
 .left-slider {
     width: 100%;
 }
@@ -166,7 +170,7 @@ select {
     position: absolute;
     z-index: 1;
     left: 20%;
-    top: 4rem;
+    top: 9rem;
 }
 
 .sliderimg {
@@ -489,14 +493,12 @@ a {
         background-color: white;
         cursor: pointer;
         border: none;
-        width: 52vw
+        width: 60vw
     }
 
     #search {
         border: none;
-        padding: 5px 8px;
         background-color: white;
-        color: green;
     }
 
     .navBotton {
@@ -513,7 +515,7 @@ a {
 
     .panier {
         border-radius: 5px;
-        padding: 0 5px;
+        padding: 0 4px;
     }
 
     .panier img {
