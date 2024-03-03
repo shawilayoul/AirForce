@@ -461,6 +461,7 @@ a {
         display: flex;
         align-items: center;
         gap: 1rem;
+        width: 100%;
     }
 
     .navtitlel h2 {
@@ -488,6 +489,7 @@ a {
         background-color: white;
         cursor: pointer;
         border: none;
+        width: 40%;
     }
 
     #search {
