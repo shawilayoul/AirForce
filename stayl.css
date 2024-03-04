@@ -94,6 +94,10 @@ nav {
     gap: 50px;
     font-size: larger;
 }
+.navItem a{
+    text-decoration: none;
+    color:white;
+}
 
 /* Home page style*/
 .container-home {
@@ -195,7 +199,7 @@ select {
 
 .sliderbtn {
     position: absolute;
-    right: 30%;
+    right: 28%;
     top: 70%;
     padding: 10px 20px;
     background-color: black;
@@ -219,23 +223,23 @@ select {
 }
 
 .slider:nth-child(1) .sliderCircle {
-    background: #82074a;
+    background: green;
 }
 
 .slider:nth-child(2) .sliderCircle {
-    background-color: green;
+    background-color:#82074a;
 }
 
 .slider:nth-child(3) .sliderCircle {
-    background: #82074a;
+    background: green;
 }
 
 .slider:nth-child(4) .sliderCircle {
-    background-color: green;
+    background-color:#82074a;;
 }
 
 .slider:nth-child(5) .sliderCircle {
-    background: #82074a;
+    background: green;
 
 }
 
@@ -266,18 +270,27 @@ select {
 }
 
 /* display  item in catr start*/
-.display {
+.display{
     display: flex;
-    background-color: beige;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    padding: 10px 0;
+    width: 100%;
     position: relative;
+    width: 100%;
+}
+.dispplay-items {
+    display: flex;
+    background-color: wheat;;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    padding: 20px;
+    position: relative;
+    width: 70vw;
 }
 
 .disimg {
-    width: 70%;
+    width: 60%;
 }
 
 .dirighttitle {
@@ -378,7 +391,7 @@ select {
     position: absolute;
     left: 25%;
     z-index: 1;
-    top: 10%;
+    top:0;
     display: none;
     border-radius: 8px;
 }
@@ -386,7 +399,7 @@ select {
 .payment-form {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .payment-top {
@@ -422,6 +435,9 @@ select {
 
 /* payment model end*/
 /* footer section start */
+.footer{
+    position: relative;
+}
 .footer-top {
     display: flex;
     align-items: center;
