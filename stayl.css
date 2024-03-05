@@ -276,14 +276,13 @@ select {
     justify-content: center;
     width: 100%;
     position: relative;
-    width: 100%;
+    height: 100vh;
 }
 .dispplay-items {
     display: flex;
     background-color: wheat;;
     align-items: center;
     justify-content: center;
-    height: 70vh;
     padding: 20px;
     position: relative;
     width: 70vw;
@@ -398,7 +397,7 @@ select {
     position: absolute;
     left: 25%;
     z-index: 1;
-    top:0;
+    top:20%;
     display: none;
     border-radius: 8px;
 }
@@ -592,12 +591,6 @@ a {
         height: 300px;
     }
 
-    /*.mobile .sliderCircle {
-        width: 350px;
-        height: 350px;
-        border-radius: 50%;
-    }*/
-
     .sliderPrice {
         position: absolute;
         font-size: 16px;
@@ -632,10 +625,16 @@ a {
         align-items: center;
         justify-content: center;
         padding: 0 20px;
+        height: 100vh;
     }
 
+    .dispplay-items{
+        flex-direction: column;
+    }
     .latest-title {
         font-size: 16px;
+        align-items: center;
+        justify-content: center;
     }
 
     .footer-top {

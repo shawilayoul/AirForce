@@ -105,7 +105,7 @@ const latestProducts = [
     img: "./assests/air1.png",
     description:
       "Male, likely aged 25–45, cares about <br> his appearance but also",
-    price: 150,
+    price: 100,
   },
   {
     img: "./assests/blazer.png",
@@ -116,7 +116,7 @@ const latestProducts = [
     img: "./assests/blazer2.png",
     description:
       "When both your staff and customers <br> can access the most accurate",
-    price: 150,
+    price: 300,
   },
 ];
 //home slider
