@@ -33,24 +33,22 @@ nav {
     color: white;
 }
 
-.search {
+.search{
     display: flex;
     justify-content: space-between;
     padding: 3px 8px;
     border-radius: 10px;
-    width: 350px;
     background-color: white;
     color: gray;
     cursor: pointer;
     border: none;
 }
-
-#search {
-    width: 300px;
-    border: none;
-    padding: 5px 10px;
-    background-color: white;
-    color: lightgrey;
+.search input{
+  border: none;  
+}
+.search input:focus{
+ width: 600px;
+ border: none;
 }
 
 .navTop {
@@ -94,9 +92,10 @@ nav {
     gap: 50px;
     font-size: larger;
 }
-.navItem a{
+
+.navItem a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 /* Home page style*/
@@ -227,7 +226,7 @@ select {
 }
 
 .slider:nth-child(2) .sliderCircle {
-    background-color:#82074a;
+    background-color: #82074a;
 }
 
 .slider:nth-child(3) .sliderCircle {
@@ -235,7 +234,8 @@ select {
 }
 
 .slider:nth-child(4) .sliderCircle {
-    background-color:#82074a;;
+    background-color: #82074a;
+    ;
 }
 
 .slider:nth-child(5) .sliderCircle {
@@ -270,7 +270,7 @@ select {
 }
 
 /* display  item in catr start*/
-.display{
+.display {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -278,9 +278,11 @@ select {
     position: relative;
     height: 100vh;
 }
+
 .dispplay-items {
     display: flex;
-    background-color: wheat;;
+    background-color: wheat;
+    ;
     align-items: center;
     justify-content: center;
     padding: 20px;
@@ -359,14 +361,18 @@ select {
     border-radius: 6px;
     cursor: pointer;
 }
-.remove{
-    background-color: red;
-    color: white;
-}
-.added{
+
+.remove {
     background-color: black;
     color: white;
 }
+
+.added {
+
+    background-color: red;
+    color: white;
+}
+
 .items {
     display: flex;
     flex-direction: column;
@@ -397,7 +403,7 @@ select {
     position: absolute;
     left: 25%;
     z-index: 1;
-    top:20%;
+    top: 20%;
     display: none;
     border-radius: 8px;
 }
@@ -441,9 +447,10 @@ select {
 
 /* payment model end*/
 /* footer section start */
-.footer{
+.footer {
     position: relative;
 }
+
 .footer-top {
     display: flex;
     align-items: center;
@@ -507,22 +514,6 @@ a {
         color: white;
     }
 
-    .search {
-        display: flex;
-        justify-content: space-between;
-        padding: 3px 8px;
-        border-radius: 10px;
-        background-color: white;
-        cursor: pointer;
-        border: none;
-        width: 60vw
-    }
-
-    #search {
-        border: none;
-        background-color: white;
-    }
-
     .navBotton {
         gap: 20px;
     }
@@ -530,7 +521,10 @@ a {
     .navBotton span {
         font-size: 15px;
     }
-
+    
+    .search input:focus{
+        width: 250px;
+    }
     .container-home .left {
         display: none;
     }
@@ -628,9 +622,10 @@ a {
         height: 100vh;
     }
 
-    .dispplay-items{
+    .dispplay-items {
         flex-direction: column;
     }
+
     .latest-title {
         font-size: 16px;
         align-items: center;

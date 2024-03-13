@@ -139,9 +139,19 @@ sliderProducts.forEach((product) => {
 });
 
 /* latest products*/
+const latestDrop = document.querySelector(".latest-drop");
+const productEls = [];
 latestProducts.forEach((products) => {
-  const latestDrop = document.querySelector(".latest-drop");
-  const Droptamplate = `
+  const productElement = createProductElement(products);
+  productEls.push(productElement);
+  latestDrop.appendChild(productElement);
+  // updat the value of cart
+});
+
+// create latest product
+function createProductElement(products) {
+  let Droptamplate = document.createElement("div");
+  Droptamplate.innerHTML = `
   <div class="items">  
                         <div class="item-img">
                             <img src=${products.img} alt="">
@@ -157,30 +167,34 @@ latestProducts.forEach((products) => {
                         <button class="latest-btn">Add to cart</button>
                     </div>           
   `;
-  latestDrop.innerHTML += Droptamplate;
-  // updat the value of cart
+  //update the of the cart
+  Droptamplate.querySelector(".latest-btn").addEventListener(
+    "click",
+    updateCart
+  );
+  return Droptamplate;
+}
 
-  const cartItem = document.querySelector(".panierItem");
-  const latestBtn = document.querySelectorAll(".latest-btn");
-  latestBtn.forEach((element) => {
-    let cartItemCount = 0;
-    element.addEventListener("click", () => {
-      if (element.classList.contains("added")) {
-        element.classList.remove("added");
-        element.classList.add("remove");
-        element.innerHTML = "Remove from cart";
-        cartItemCount++;
-        console.log(cartItemCount.toString());
-      } else {
-        element.classList.remove("remove");
-        element.classList.add("added");
-        element.innerHTML = "Add to cart";
-        cartItemCount--;
-      }
-    });
-    cartItem.innerHTML = cartItemCount.toString();
-  });
-});
+const cartItem = document.querySelector(".panierItem");
+let cartItemCount = 0;
+
+function updateCart(e) {
+  const targetEl = e.target;
+
+  if (targetEl.classList.contains("added")) {
+    targetEl.classList.remove("added");
+    targetEl.classList.add("remove");
+    targetEl.innerHTML = "Add to cart";
+    cartItemCount--;
+  } else {
+    targetEl.classList.add("added");
+    targetEl.classList.remove("remove");
+    targetEl.innerText = "Remove from cart";
+
+    cartItemCount++;
+  }
+  cartItem.innerText = cartItemCount.toString();
+}
 const navItem = document.querySelectorAll(".navItem");
 const sliders = document.querySelector(".sliders");
 const shoeZise = document.querySelectorAll(".shoe-size");
